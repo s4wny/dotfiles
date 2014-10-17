@@ -1,4 +1,4 @@
-# _server.bashrc
+# .bashrc.server
 
 
 ###########
@@ -19,7 +19,7 @@
 
 PART1="${RESET}${NORMAL}"
 
-# ~37@20:56:57~
+# root@127.0.0.1
 PART2="${WHITE}\u${NORMAL}@${WHITE}\h${NORMAL} "
 
 # [*dir*]
