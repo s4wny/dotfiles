@@ -47,7 +47,17 @@ export LS_COLORS
 alias cls='clear'
 alias ll='ls -lAhG --color'
 alias ls='ls --color'
+alias lsa='ls -A'
 
 mkcd() {
     mkdir -p "$@" && cd "$_";
+}
+
+# ls after cd
+cd() {
+  if [ -n "$1" ]; then
+    builtin cd "$@" && ls
+  else
+    builtin cd ~ && ls
+  fi
 }
