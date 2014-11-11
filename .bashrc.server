@@ -1,3 +1,6 @@
+############################################
+## My edits
+############################################
 # .bashrc.server
 
 
@@ -17,7 +20,7 @@
     BOLD="\[\033[1m"
 
 
-PART1="${RESET}${NORMAL}"
+PART1="${RESET}${NORMAL}\n"
 
 # root@127.0.0.1
 PART2="${WHITE}\u${NORMAL}@${WHITE}\h${NORMAL} "
@@ -46,8 +49,7 @@ export LS_COLORS
 
 alias cls='clear'
 alias ll='ls -lAhG --color'
-alias ls='ls --color'
-alias lsa='ls -A'
+alias ls='ls -A --color'
 
 mkcd() {
     mkdir -p "$@" && cd "$_";
@@ -56,8 +58,8 @@ mkcd() {
 # ls after cd
 cd() {
   if [ -n "$1" ]; then
-    builtin cd "$@" && ls
+    builtin cd "$@" && ls -A
   else
-    builtin cd ~ && ls
+    builtin cd ~ && ls -A
   fi
 }
