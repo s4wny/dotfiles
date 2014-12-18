@@ -62,7 +62,8 @@ set backspace=indent,eol,start
 "  Keybindings 
 " ---------------
 
-:imap jj <Esc>
-:imap jk <Esc>
+imap jk <Esc>
 
+" Remove search highlights
+nmap jk :noh<return>
 
