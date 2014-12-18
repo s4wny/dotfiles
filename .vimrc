@@ -63,7 +63,15 @@ set backspace=indent,eol,start
 " ---------------
 
 imap jk <Esc>
+imap ö <Esc>
 
 " Remove search highlights
-nmap jk :noh<return>
+" nmap jk :noh<return>
+nmap ö :noh<return>
 
+" Normal arrow movement, please.
+map h <insert>
+map i <Up>
+map j <Left>
+map k <Down>
+noremap h i
