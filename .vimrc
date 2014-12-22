@@ -57,6 +57,11 @@ set sidescroll=1
 set backspace=indent,eol,start
 
 
+" Save all .swp files in one place
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
+
 
 " ---------------
 "  Keybindings 
