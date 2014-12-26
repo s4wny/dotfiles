@@ -1,3 +1,4 @@
 # Dotfiles
 
-My dotfiles. Feel free to fork.
+My dotfiles and configurations. Feel free to fork.
+
