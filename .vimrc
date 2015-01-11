@@ -1,5 +1,17 @@
 set nocompatible
 set encoding=utf-8
+" Required for SingeCompile plugin
+filetype plugin on
+
+
+" ----------------
+"     Plugins
+" ----------------
+
+" SingleCompile
+command Runcpp SCCompileRunAF -std=c++11 -Wall -Wextra
+
+
 
 " ----------------
 "    Appearance
