@@ -28,6 +28,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'                   " Automatically creates/delete the closing ',",<,(,{,[,...
 Plugin 'altercation/vim-colors-solarized'       " Theme: Solarized
 Plugin 'xuhdev/SingleCompile'                   " Compile and run code from vim
+Plugin 'Valloric/YouCompleteMe'                 " Complete C/C++ code
 
 call vundle#end()
 filetype plugin indent on
