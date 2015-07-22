@@ -20,13 +20,22 @@
     BOLD="\[\033[1m"
 
 
+
 PART1="${RESET}${NORMAL}\n"
 
 # root@127.0.0.1
 PART2="${WHITE}\u${NORMAL}@${WHITE}\h${NORMAL} "
 
+# ~37@20:56:57~  (line number@time)
+# PART2="~${BOLD}\#${NORMAL}@${BOLD}\t${NORMAL}~ "
+
+
 # [*dir*]
 PART3="[\w]"
+
+# Smart dir, turns "/User/Sawny/Code/php/laravel/app/Controllers" into something like "/Users/.../app/Controllers".
+# SMARTDIR='$(echo -n "${PWD/#$HOME/~}" | awk -F "/" '"'"'{if (length($0) > 14) { if (NF>4) print $1 "/" $2 "/.../" $NF; else if (NF>3) print $1 "/" $2 "/.../" $NF; else print $1 "/.../" $NF; } else print $0;}'"'"')'
+#PART3='[$(eval "echo ${SMARTDIR}")]'
 
 PART4="${GREEND} $ ${NORMAL}"
 
@@ -48,7 +57,7 @@ export LS_COLORS
 ###############
 
 alias cls='clear'
-alias ll='ls -lAhG --color'
+alias ll='ls -lAhG --color' # Remove --color on mac
 alias ls='ls -A --color'
 
 mkcd() {
