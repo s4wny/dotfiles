@@ -1,0 +1,6 @@
+Host homestead
+    Hostname 127.0.0.1
+    Port 2222
+    User vagrant
+    IdentityFile ~/.ssh/id_rsa_homestead
+    IdentitiesOnly yes
