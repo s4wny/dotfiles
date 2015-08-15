@@ -1,10 +1,13 @@
 {
+	"theme": "Soda Light 3.sublime-theme",
 	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"enable_tab_scrolling": false,
+
+	"font_face": "Consolas",
 	"font_size": 11,
+
 	"ignored_packages":
 	[
 		"Vintage"
-	],
-	"theme": "Soda Light 3.sublime-theme",
-	"enable_tab_scrolling": false
+	]
 }
