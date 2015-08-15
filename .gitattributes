@@ -1,1 +1,11 @@
 * eol=lf
+
+*.png    binary
+*.jpg    binary
+*.jar    binary
+*.class  binary
+*.gz     binary
+*.tar    binary
+*.dll    binary
+*.exe    binary
+*.zip    binary
