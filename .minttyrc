@@ -12,6 +12,8 @@ RightClickAction=menu
 Transparency=Low
 OpaqueWhenFocused=1
 Scrollbar=none
+Columns=110
+ClicksPlaceCursor=yes
 
 
 #
