@@ -72,3 +72,8 @@ cd() {
     builtin cd ~ && ls -A
   fi
 }
+
+# Set the title of mintty, example: `title "Awesome title"`
+title() {
+    echo -ne '\e]0;'"$1"'\a'
+}
