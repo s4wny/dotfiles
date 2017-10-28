@@ -1,5 +1,7 @@
 [alias]
     ci = commit
+    co = commit
+    ps = push
     st = status
     undo = reset HEAD~
     diffs = diff --staged
