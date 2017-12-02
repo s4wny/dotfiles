@@ -2,6 +2,7 @@
     ci = commit
     co = commit
     ps = push
+    pl = pull
     st = status
     undo = reset HEAD~
     diffs = diff --staged
