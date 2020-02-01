@@ -6,7 +6,7 @@
     st = status
     undo = reset HEAD~
     diffs = diff --staged
-    yolo = !"git add -A; git commit -m \"$(echo $(curl -s http://whatthecommit.com/index.txt))\""
+    yolo = !"git add -A; git commit -m \"$(echo $(curl -s http://whatthecommit.com/index.txt))\"; git push"
 
 	showw = show HEAD~
 	showww = show HEAD~2
